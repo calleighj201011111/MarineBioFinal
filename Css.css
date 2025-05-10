@@ -68,7 +68,7 @@ h2 {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
-  transition: background-color 5s ease;
+  transition: background-color 3s ease;
   font-family: Monospace, Tahoma, "Times New Roman";
 }
 
@@ -200,6 +200,6 @@ footer {
     width: 400px;
     display: block;
     margin: 0 auto;
-    align:center;
+   
   }
 }
