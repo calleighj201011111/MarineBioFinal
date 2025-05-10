@@ -70,6 +70,7 @@ h2 {
   text-decoration: none;
   transition: background-color 0.3s ease;
   font-family: Monospace, Tahoma, "Times New Roman";
+  text-color:white;
 }
 
 .navbar a:hover {
