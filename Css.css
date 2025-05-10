@@ -24,7 +24,7 @@ li a {
 li a:hover {
   background-color: #5998D7;
 text-decoration:none;
-transition:color 1s ease-out;}
+    transition: background-color 300ms linear;}
 
 nav a:link {color: black;}
 nav a:visited {color: white;}
