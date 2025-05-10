@@ -26,8 +26,8 @@ li a: hover {
 text-decoration: none;
 transition:color 1s ease-out;}
 
-nav a:link {color: white;}
-nav a:hover {color: black;}
+nav a:link {color: black;}
+nav a:hover {color: white;}
 
 
 body {
