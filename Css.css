@@ -1,3 +1,4 @@
+/* Reset & Base Styles */
 html, body {
   height: 100%;
   margin: 0;
@@ -17,6 +18,7 @@ body {
   font-family: Tahoma, "Times New Roman";
 }
 
+/* Headings */
 h1 {
   color: #f6f3e6;
   text-shadow: 5px 2px 5px #f3e29d;
@@ -36,35 +38,45 @@ h2 {
   text-align: center;
 }
 
-nav {
-  background-color: #333;
-  padding: 10px;
+/* Navigation Bar */
+.navbar {
+  background-color: #30719C;
+  padding: 10px 30px;
+  border: 2px solid #30719C;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
-nav ul {
-  list-style-type: none;
+.navbar ul.menu {
+  list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
+.navbar li {
+  margin: 0;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
+.navbar a {
   display: block;
+  color: #004065;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-family: Monospace, Tahoma, "Times New Roman";
 }
 
-nav ul li a:hover {
-  background-color: #ddd;
-  color: black;
+.navbar a:hover {
+  background-color: lightgreen;
 }
 
+/* Hamburger Menu */
 .menu-icon {
   display: none;
   font-size: 30px;
@@ -73,10 +85,12 @@ nav ul li a:hover {
   padding: 10px;
 }
 
-#menu-toggle {
+/* Hide the actual checkbox input */
+.menu-toggle {
   display: none;
 }
 
+/* Mobile Navigation */
 @media (max-width: 768px) {
   .navbar ul.menu {
     display: none;
@@ -86,15 +100,18 @@ nav ul li a:hover {
     border-radius: 0 0 10px 10px;
   }
 
+  /* Show the menu when checkbox is checked */
   #menu-toggle:checked + .menu-icon + ul.menu {
     display: flex;
   }
 
+  /* Show the hamburger icon on mobile */
   .menu-icon {
     display: block;
   }
 }
 
+/* Content Sections */
 .home {
   background-color: #004065;
   width: 950px;
@@ -119,6 +136,7 @@ img {
   max-width: 100%;
 }
 
+/* Paragraphs and Labels */
 p {
   color: white;
 }
@@ -129,6 +147,7 @@ label {
   text-align: center;
 }
 
+/* Table Styling */
 table {
   border: 1px solid white;
   border-collapse: collapse;
@@ -148,6 +167,7 @@ td:nth-child(even) {
   background-color: rgba(150, 212, 212, 0.4);
 }
 
+/* Footer */
 footer {
   background-color: #004065;
   text-align: center;
@@ -156,6 +176,7 @@ footer {
   padding: 10px;
 }
 
+/* Mobile Layout Adjustments */
 @media (max-width: 768px) {
   .home {
     display: none;
