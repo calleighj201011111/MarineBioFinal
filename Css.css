@@ -21,14 +21,15 @@ li a {
   font-family: Monospace,Tahoma,"Times New Roman";
 }
 
+li a {
+  transition: all 0.5s ease;
+  background: red;
+  padding: 10px;
+}
 li a:hover {
-  background-color: #5998D7;
-text-decoration:none;
-    transition: background-color 300ms linear;}
-
-nav a:link {color: black;}
-nav a:visited {color: white;}
-nav a:hover {color: white;}
+  background: green;
+  padding: 20px;
+}
 
 
 body {
