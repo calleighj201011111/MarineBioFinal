@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -18,7 +18,7 @@ body {
   font-family: Tahoma, "Times New Roman";
 }
 
-/* Headings */
+
 h1 {
   color: #f6f3e6;
   text-shadow: 5px 2px 5px #f3e29d;
@@ -38,45 +38,38 @@ h2 {
   text-align: center;
 }
 
-/* Navigation Bar */
-.navbar {
-  background-color: #30719C;
-  padding: 10px 30px;
-  border: 2px solid #30719C;
-  border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+
+nav {
+    background-color: #333;  /* Dark background for the navbar */
+    padding: 10px;
 }
 
-.navbar ul.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  flex-wrap: wrap;
+nav ul {
+    list-style-type: none;  /* Remove default bullet points */
+    margin: 0;
+    padding: 0;
+    text-align: center;  /* Center-align the links */
 }
 
-.navbar li {
-  margin: 0;
+nav ul li {
+    display: inline-block;  /* Display list items horizontally */
+    margin-right: 20px;  /* Space between links */
 }
 
-.navbar a {
-  display: block;
-  color: #004065;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  font-family: Monospace, Tahoma, "Times New Roman";
+nav ul li a {
+    color: white;  /* Set the link text color to white */
+    text-decoration: none;  /* Remove the underline from links */
+    padding: 10px 20px;  /* Add some padding inside the links */
+    display: block;  /* Make the whole area clickable */
 }
 
-.navbar a:hover {
-  background-color: lightgreen;
+nav ul li a:hover {
+    background-color: #ddd;  /* Light background on hover */
+    color: black;  /* Change the text color on hover */
 }
 
-/* Hamburger Menu */
+
+
 .menu-icon {
   display: none;
   font-size: 30px;
@@ -85,7 +78,6 @@ h2 {
   padding: 10px;
 }
 
-/* Hide menu by default on small screens */
 #menu-toggle {
   display: none;
 }
