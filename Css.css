@@ -77,10 +77,6 @@ h2 {
 }
 
 /* Hamburger Menu */
-#menu-toggle {
-  display: none;
-}
-
 .menu-icon {
   display: none;
   font-size: 30px;
@@ -89,7 +85,11 @@ h2 {
   padding: 10px;
 }
 
-/* Responsive Nav */
+/* Hide menu by default on small screens */
+#menu-toggle {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .navbar ul.menu {
     display: none;
