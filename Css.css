@@ -28,6 +28,7 @@ transition:color 1s ease-out;}
 
 nav a:link {color: black;}
 nav a:hover {color: white;}
+nav a:visited {color:white;}
 
 
 body {
